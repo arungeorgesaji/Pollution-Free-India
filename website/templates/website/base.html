@@ -1,17 +1,107 @@
-<!doctype html>
+<!DOCTYPE html>
 {% load static %}
+<head>
+  <meta charset="utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+</head>
+<link rel="stylesheet" href={% static 'admin/css/style.css' %} type="text/css"/>
+<body>
+  <html>
     <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <style>
+        .banner {
+          width: 100%;
+          background-color: #009579;
+          text-align: center;
+          font-size: 3em;
+          color: #ffffff;
+        }
+      </style>
     </head>
-    <link rel="stylesheet" href={% static 'admin/css/style.css' %} type="text/css"/>
     <body>
-        <div class="banner">
-            <div class="banner__content">
-              <div class="banner__text">
-                <strong>Pollution Free Indian (PFI)</strong>
-              </div>
-            </div>
-         </div>
-        <a href="http://127.0.0.1:8000/about_us/"  data-inline="true" >about us</a>
+      <div class="banner">Pollution Free India</div>
     </body>
+  </html>
+  <a href="http://127.0.0.1:8000/about_us/" data-inline="true">
+    <button style="color: blue"><h1>About Us</h1></button>
+  </a>
+
+<a href="http://127.0.0.1:8000/articles/" data-inline="true">
+  <button style="color: blue"><h1>Articles</h1></button>
+</a>
+
+  <div class="dropdown">
+    <data-inline="true">
+      <button style="color: blue"><h1>Pollution</h1></button>
+    <a\>
+    <div class="dropdown-content">
+      <a href="http://127.0.0.1:8000/air_pollution/">Air</a>
+      <a href="http://127.0.0.1:8000/water_pollution/">Water</a>
+      <a href="http://127.0.0.1:8000/noise_pollution/">noise</a>
+      <a href="http://127.0.0.1:8000/electromagnetic_pollution/">ElectroMagnetic</a>
+      <a href="http://127.0.0.1:8000/light_pollution/">Light</a>
+      <a href="http://127.0.0.1:8000/littering/">Littering</a>
+      <a href="http://127.0.0.1:8000/plastic_pollution/">plastic</a>
+      <a href="http://127.0.0.1:8000/soil_contamination/">Soil Contamination</a>
+      <a href="http://127.0.0.1:8000/radioactive_contamination/">Radioactive Contamination</a>
+      <a href="http://127.0.0.1:8000/thermal_pollution/">Thermal</a>
+      <a href="http://127.0.0.1:8000/visual_pollution/">Visual </a>
+    </div>
+  </div>
+  <style>
+   
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+
+.dropdown:hover .dropdown-content {display: block;}
+
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+  </style>
+
+ 
+    <a href="http://127.0.0.1:8000/donate/" data-inline="true">
+      <button style="color: blue"><h1>Donate</h1></button>
+    <a\>
+
+        <a href="http://127.0.0.1:8000/contact_us/" data-inline="true">
+      <button style="color: blue"><h1>Contact Us</h1></button>
+    <a\>
+      {% block content %}<title>home</title>{% endblock %}
+</body>
