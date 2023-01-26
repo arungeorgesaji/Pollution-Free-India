@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import *
 
 def base(request):
     return render(request, "website/base.html")
@@ -47,3 +48,14 @@ def visual(request):
 
 def plastic(request): 
     return render(request, "website/plastic.html")
+
+def chat(request): 
+    messages = history.objects.all()
+
+    if request.method=="POST":
+        message= request.POST.get('message')
+        save = history(message=message, anonymous=True)
+        save.save()
+    return render(request, "website/chat.html", {'messages': messages})
+    
+

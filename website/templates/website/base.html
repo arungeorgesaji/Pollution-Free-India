@@ -85,6 +85,13 @@
   display: block;
 }
 
+.space{
+  padding-left: 70em;
+}
+
+.space1{
+  padding-left: 40em;
+}
 
 .dropdown-content a:hover {background-color: #ddd;}
 
@@ -93,6 +100,12 @@
 
 
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+body{
+        background-image: url("/static/admin/pollution/media/poll_back.jpg");
+        background-size: cover;
+      }
+  
   </style>
 
  
@@ -103,5 +116,10 @@
         <a href="http://127.0.0.1:8000/contact_us/" data-inline="true">
       <button style="color: blue"><h1>Contact Us</h1></button>
     </a>
-      {% block content %}<title>home</title>{% endblock %}
+      {% block content %}
+      <title>home</title><br><br><br><br><br>
+      <div class="space"><a href="https://www.instagram.com/pollutionfreeindia.official/"><img src="{% static "admin/pollution/media/instagram.jpeg" %}" width="150"></a></div><br><br>
+      <div class="space"><a href="https://twitter.com/pollutionfreei4"><img src="{% static "admin/pollution/media/twitter.jpeg" %}" width="150"></a></div><br><br>
+      <div class="space1"><a href="http://127.0.0.1:8000/chat/"><img src="{% static "admin/pollution/media/chat.png" %}" width="150"></a></div>
+      {% endblock %}
 </body>

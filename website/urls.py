@@ -19,6 +19,7 @@ urlpatterns =[
     path('thermal_pollution/', views.thermal, name="thermal"),
     path('visual_pollution/', views.visual, name="visual"),
     path('plastic_pollution/', views.plastic, name="plastic"),
+    path('chat/', views.chat, name="chat"),
 ]
 
 urlpatterns += staticfiles_urlpatterns()

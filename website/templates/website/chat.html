@@ -1,0 +1,15 @@
+{% extends 'website/base.html' %}
+{% block content %}
+    {% for message in messages %}
+        {% if message.anonymous %}
+            <h3>anonymous: {{ message.message }}</h3>
+        {% else %}
+            <h3>PFI: {{ message.message }}</h3>
+        {% endif %}
+    {% endfor %}
+    <form action="http://127.0.0.1:8000/chat/" method="post">
+        {% csrf_token %}
+        <input type="text" name="message" placeholder="Sent a message"/>
+    </form>
+
+{% endblock %}
