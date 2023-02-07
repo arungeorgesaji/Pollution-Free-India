@@ -25,19 +25,20 @@
       <div class="banner">Pollution Free India</div>
     </body>
   </html>
-  <a href="http://127.0.0.1:8000/about_us/" data-inline="true">
-    <button style="color: blue"><h1>About Us</h1></button>
+  <center>
+  <a href="http://127.0.0.1:8000/about_us/" data-inline="true" style="text-decoration: none;">
+    <span style="color: blue"><h1>About Us</h1></span>
   </a>
 
-<a href="http://127.0.0.1:8000/articles/" data-inline="true">
-  <button style="color: blue"><h1>Articles</h1></button>
+<a href="http://127.0.0.1:8000/articles/" data-inline="true" style="text-decoration: none;">
+  <span style="color: blue"><h1>Articles</h1></span>
 </a>
 
-  <div class="dropdown">
-    <data-inline="true">
-      <button style="color: blue"><h1>Pollutions</h1></button>
+  <div class="dropdown" style="margin-right: 2em;">
+      <span style="color: blue"><h1>Pollutions</h1></span>
     
     <div class="dropdown-content">
+      <center>
       <a href="http://127.0.0.1:8000/air_pollution/">Air</a>
       <a href="http://127.0.0.1:8000/water_pollution/">Water</a>
       <a href="http://127.0.0.1:8000/noise_pollution/">noise</a>
@@ -49,8 +50,17 @@
       <a href="http://127.0.0.1:8000/radioactive_contamination/">Radioactive Contamination</a>
       <a href="http://127.0.0.1:8000/thermal_pollution/">Thermal</a>
       <a href="http://127.0.0.1:8000/visual_pollution/">Visual </a>
+      </center>
     </div>
   </div>
+  
+  <a href="http://127.0.0.1:8000/donate/" data-inline="true"  style="text-decoration: none;">
+    <span style="color: blue"><h1>Donate</h1></span>
+  </a>
+
+  <a href="http://127.0.0.1:8000/contact_us/" data-inline="true"  style="text-decoration: none;">
+    <span style="color: blue"><h1>Contact Us</h1></span>
+  </a>
   <style>
    
 .dropbtn {
@@ -152,6 +162,11 @@
   padding-right: 53.99em;
 }
 
+a[data-inline="true"] {
+    display: inline-block;
+    margin-right: 2em;
+  }
+
 
 .dropdown-content a:hover {background-color: #ddd;}
 
@@ -167,15 +182,7 @@ body{
       }
   
   </style>
-
- 
-    <a href="http://127.0.0.1:8000/donate/" data-inline="true">
-      <button style="color: blue"><h1>Donate</h1></button>
-    </a>
-
-        <a href="http://127.0.0.1:8000/contact_us/" data-inline="true">
-      <button style="color: blue"><h1>Contact Us</h1></button>
-    </a>
+  </center>
       {% block content %}
       <title>home</title><br><br><br><br><br>
       <div class="space"><a href="https://www.instagram.com/pollutionfreeindia.official/"><img src="{% static "admin/pollution/media/instagram.jpeg" %}" width="150"></a></div><br><br>
