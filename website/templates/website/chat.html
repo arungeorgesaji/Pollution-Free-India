@@ -1,5 +1,12 @@
 {% extends 'website/base.html' %}
 {% block content %}
+
+<style>
+    body{
+        background-image: url("/static/admin/pollution/media/poll_back.jpg");
+        background-size: cover;
+      }
+</style>
     {% for message in messages %}
         {% if message.anonymous %}
             <h3>anonymous: {{ message.message }}</h3>

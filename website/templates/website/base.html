@@ -14,7 +14,7 @@
       <style>
         .banner {
           width: 100%;
-          background-color: #009579;
+          background-color: blue;
           text-align: center;
           font-size: 3em;
           color: #ffffff;
@@ -26,6 +26,10 @@
     </body>
   </html>
   <center>
+
+  <a href="http://127.0.0.1:8000/" data-inline="true" style="text-decoration: none;">
+      <span style="color: blue"><h1>Home</h1></span>
+
   <a href="http://127.0.0.1:8000/about_us/" data-inline="true" style="text-decoration: none;">
     <span style="color: blue"><h1>About Us</h1></span>
   </a>
@@ -96,11 +100,15 @@
 }
 
 .space{
-  padding-left: 70em;
+  padding-left: 80em;
 }
 
 .space1{
-  padding-left: 40em;
+  padding-left: 79.2em;
+}
+
+.space15{
+  padding-left: 80em;
 }
 
 .border{
@@ -109,12 +117,12 @@
 
 .space3{
   padding-left: 2em;
-  padding-right: 44.7em;
+  padding-right: 45.49em;
 }
 
 .space4{
   padding-left: 2em;
-  padding-right : 51.3em;
+  padding-right : 52.1em;
 }
 
 .space5{
@@ -176,17 +184,18 @@ a[data-inline="true"] {
 
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
 
-body{
-        background-image: url("/static/admin/pollution/media/poll_back.jpg");
-        background-size: cover;
-      }
-  
   </style>
   </center>
       {% block content %}
-      <title>home</title><br><br><br><br><br>
-      <div class="space"><a href="https://www.instagram.com/pollutionfreeindia.official/"><img src="{% static "admin/pollution/media/instagram.jpeg" %}" width="150"></a></div><br><br>
-      <div class="space"><a href="https://twitter.com/pollutionfreei4"><img src="{% static "admin/pollution/media/twitter.jpeg" %}" width="150"></a></div><br><br>
-      <div class="space1"><a href="http://127.0.0.1:8000/chat/"><img src="{% static "admin/pollution/media/chat.png" %}" width="150"></a></div>
+      <style>
+          body{
+        background-image: url("/static/admin/pollution/media/poll_back.jpg");
+        background-size: cover;
+      }
+      </style>
+      <title>home</title><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <div class="space1"><a href="https://www.instagram.com/pollutionfreeindia.official/"><img src="{% static "admin/pollution/media/instagram.png" %}" width="85"></a></div><br>
+      <div class="space15"><a href="https://twitter.com/pollutionfreei4"><img src="{% static "admin/pollution/media/twitter.png" %}" width="60"></a></div><br>
+      <div class="space"><a href="http://127.0.0.1:8000/chat/"><img src="{% static "admin/pollution/media/messsge.png" %}" width="70"></a></div>
       {% endblock %}
 </body>
